@@ -1,0 +1,7 @@
+- Mitarbeiter (mitarbeiter): vorname[string/text], nachname[string/text], personalnummer[string/text], qualifikation[lookup/select], beschaeftigungsumfang[lookup/radio], wochenstunden[number], telefon[string/tel], email[string/email], verfuegbare_tage[multiplelookup/checkbox], anmerkungen_mitarbeiter[string/textarea]
+- Schichtvorlagen (schichtvorlagen): schicht_name[string/text], schicht_beginn[string/text], schicht_ende[string/text], schicht_typ[lookup/select], schicht_beschreibung[string/textarea]
+- Patienten (patienten): patient_vorname[string/text], patient_nachname[string/text], geburtsdatum[date/date], pflegegrad[lookup/select], strasse[string/text], hausnummer[string/text], plz[string/text], ort[string/text], standort[geo], telefon_patient[string/tel], leistungsarten[multiplelookup/checkbox], hinweise_patient[string/textarea]
+- Einsatzplanung (einsatzplanung): einsatz_datum[date/datetimeminute], mitarbeiter_auswahl[applookup/select], patient_auswahl[applookup/select], schicht_auswahl[applookup/select], einsatz_status[lookup/select], einsatz_dauer[number], einsatz_notizen[string/textarea]
+  → mitarbeiter_auswahl links to app_id 69ceb52d96e330096c48597b
+  → patient_auswahl links to app_id 69ceb53225f253045a9822ae
+  → schicht_auswahl links to app_id 69ceb53214acd954594fe260
